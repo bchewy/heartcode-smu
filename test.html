@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Island Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.dynamic-island {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Add this line */
+    top: 0; /* Add this line */
+    left: 0; /* Add this line */
+    right: 0; /* Add this line */
+    margin: auto; /* Add this line */
+	margin-top: 20px;
+}
+
+.dynamic-island > div {
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dynamic-island > div:hover {
+    background-color: #555;
+}
+
+</style>
+<body>
+<div class="dynamic-island">
+	<!-- Put your navbar elements here -->
+	<div class="left-item">Menu</div>
+	<div class="center-item">Home</div>
+	<div class="right-item">Contact</div>
+</div>
+</body>
+</html>
